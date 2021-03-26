@@ -1,0 +1,151 @@
+/* Tanya Tkach block start */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+:root {
+    /*contacts and footter colors*/
+    --hcolor:#F1C324;
+    --contacts-text-color:#6E6E6E;
+    --allcont-container-color:#FFFFFF17;
+    --contacts-background-color: #141414;
+    --footer-background-color:#F7F9FB;
+    --footer-horer-color: rgb(8, 233, 233);
+    /*contacts and footter colors*/
+}
+body {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+.logo-container img {
+    width: 100px;
+    height: 100px;
+}
+
+.logo-header {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .logo-header {
+        display: none;
+    }
+    .logo-container img {
+        display: none;
+    }
+  }
+
+ header .container-fluid {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 4px;
+ }
+ header .navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    }
+
+
+h1 {
+    color: yellow;
+    font-size: 160px;
+    font-family:Dancing Script ;
+    text-align: center;
+    position: relative;
+    top: 130px;
+}
+@media (max-width: 620px) {
+    h1 {
+      font-size: 130px;  
+    }
+}
+
+.text-header {
+    color: yellow;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 110px;
+
+}
+
+header {
+    background-image:url(../img/chernivtsi.jpg);
+    background-position: center;
+    background-size: cover;
+    min-width: 400px;
+    min-height: 850px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.white-color {
+    background-color: white;
+  
+}
+.about {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+@media (max-width: 620px) {
+    .about {
+      grid-template-columns:1fr;  
+    }
+}
+.logo-main {
+    font-size: 50px;
+    padding: 20px;
+}
+
+ .about-image {
+   object-fit: cover;
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+.white-color p {
+    font-size: 18px;
+    padding: 20px;
+}
+
+.button-container {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid white;
+    border-radius: 0.12em;
+    color:white;
+    text-align: center;
+    transition: color 0.7s;
+    background-color:transparent;
+    
+}
+.button-container button {
+     background-color:yellow;
+     font-weight: bold;
+      padding: 6px;
+    margin-top: 3px;
+    margin-bottom: 4px;
+}
+
+.button-container :hover {
+    color: #000000;
+    background-color: rgb(43, 172, 231);
+    cursor: pointer;
+}
+
+
+
+/* Tanya Tkach end block */
