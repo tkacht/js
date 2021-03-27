@@ -42,17 +42,6 @@ body {
     }
   }
 
- header .container-fluid {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 4px;
- }
- header .navbar-nav {
-    display: flex;
-    justify-content: space-evenly;
-    flex: 1;
-    }
 
 
 h1 {
@@ -133,16 +122,17 @@ header {
     
 }
 .button-container button {
-     background-color:yellow;
-     font-weight: bold;
-      padding: 6px;
+    background-color:rgb(43, 172, 231);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 6px;
     margin-top: 3px;
     margin-bottom: 4px;
 }
 
 .button-container :hover {
     color: #000000;
-    background-color: rgb(43, 172, 231);
+    background-color:yellow;
     cursor: pointer;
 }
 
