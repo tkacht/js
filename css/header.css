@@ -32,13 +32,160 @@ body {
     font-size: 25px;
     font-weight: bold;
 }
+/* Modal window */
+.open-btn {
+    padding: 10px 30px;
+    font-size: 25px;
+}
+@media (min-width: 610px) {
+    .open-btn {
+        display: none;
+    } 
+}
+button,
+input[type='submit'] {
+  background-color: transparent;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+button:focus {
+  outline: none;
+}
+.container {
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 800px;
+}
+
+.modal-container-window {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-container-window.show-modal {
+  display: block;
+}
+.modal-nav-menu {
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  width: 100%;
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.modal-header-menu {
+  background: black;
+  color:white;
+  padding: 50px;;
+}
+
+.modal-header-menu img {
+    height: 90px;
+    width: 90px;
+}
+.close-btn {
+    font-size: 35px;
+    color: var(--main-color);
+    text-decoration: none;
+    background: transparent;
+    font-size: 25px;
+    font-family: none;
+    position: absolute;
+    padding: 0px;
+    right: 0;
+    padding-right: 30px;
+}
+
+
+.modal-content-nav-menu {
+  padding: 20px;
+}
+
+.main-nav-menu a {
+    color: yellow;
+    font-size: 18px;
+    font-family: Roboto;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav-menu li {
+    list-style: none;
+    line-height: 3;
+}
+
+.btn-contacts a::after {
+    content: "   →";
+    color: var(--main-color);
+}
+
+.btn-contacts a {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid var(--main-color);
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: var(--main-color);
+    text-align: center;
+    transition: color 0.7s;
+    background-color: transparent;
+}
+
+.btn-contacts a:hover {
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.btn-contacts a:hover::after {
+    color: var(--secondary-color);
+}
+
+.main-nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+    color: #fff;
+    padding-left: 50px;
+}
+
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 
 @media (max-width: 700px) {
     .logo-header {
         display: none;
     }
-    .logo-container img {
+    .dropdown .dropbtn {
         display: none;
+    }
+    .navbar a {
+        display: none; 
     }
   }
  header .navbar {
@@ -188,6 +335,7 @@ header {
     background-color:yellow;
     cursor: pointer;
 }
+
 
 
 
